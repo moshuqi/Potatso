@@ -16,6 +16,7 @@
 		671F4F760B4AA48CEDC1B834 /* Pods_TodayWidget.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83D8D7B7274BAF6E28C980D9 /* Pods_TodayWidget.framework */; };
 		678C0BA61F39CE5800B8B93C /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 678C0BA51F39CE5800B8B93C /* NetworkExtension.framework */; };
 		678C0BA91F39CE8800B8B93C /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 678C0BA51F39CE5800B8B93C /* NetworkExtension.framework */; };
+		678C0BAA1F39D4F200B8B93C /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 678C0BA51F39CE5800B8B93C /* NetworkExtension.framework */; };
 		67BB55E31F39B9FB00222541 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 67BB55E11F39B9FB00222541 /* libcrypto.a */; };
 		67BB55E41F39B9FB00222541 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 67BB55E21F39B9FB00222541 /* libssl.a */; };
 		6BF89D48551DF9EC9D65F0BA /* Pods_PotatsoModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 972ACD00F18B9E461F9D38B1 /* Pods_PotatsoModel.framework */; };
@@ -946,6 +947,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				67BB55E31F39B9FB00222541 /* libcrypto.a in Frameworks */,
+				678C0BAA1F39D4F200B8B93C /* NetworkExtension.framework in Frameworks */,
 				67BB55E41F39B9FB00222541 /* libssl.a in Frameworks */,
 				B86B08ED1D17FB9B00613014 /* ShadowPath.framework in Frameworks */,
 				9BC600241CB2921C00E5EA61 /* PotatsoBase.framework in Frameworks */,
@@ -2355,11 +2357,14 @@
 							com.apple.Keychain = {
 								enabled = 1;
 							};
+							com.apple.NetworkExtensions = {
+								enabled = 1;
+							};
 							com.apple.Push = {
 								enabled = 1;
 							};
 							com.apple.VPNLite = {
-								enabled = 0;
+								enabled = 1;
 							};
 							com.apple.iCloud = {
 								enabled = 1;
@@ -2387,7 +2392,7 @@
 								enabled = 1;
 							};
 							com.apple.VPNLite = {
-								enabled = 0;
+								enabled = 1;
 							};
 						};
 					};
@@ -2404,6 +2409,9 @@
 								enabled = 0;
 							};
 							com.apple.Keychain = {
+								enabled = 1;
+							};
+							com.apple.VPNLite = {
 								enabled = 1;
 							};
 						};
